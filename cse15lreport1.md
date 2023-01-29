@@ -3,14 +3,14 @@
 ## Installing VSCode and Git Bash: 
  >This tutorial assumes you are using a Chromium based browser.
  
- 1. Go to this link : https://code.visualstudio.com/
+ 1. Go to this link : [https://code.visualstudio.com/](https://code.visualstudio.com/)
  2. Hit the download button
  3. Next look in the bottom left and click something that looks like this:
  
 ![image](https://user-images.githubusercontent.com/122490362/211927169-90e6b3bb-197b-4e24-8f03-2cfe448a9444.png)
 
  4. You can now install VSCode through this installer
- 5. Go to this link: https://git-scm.com/downloads
+ 5. Go to this link: [https://git-scm.com/downloads](https://git-scm.com/downloads)
  6. Click the link with your relevant OS (Windows, Mac, or Linux)
  7. Follow the instructions on the page for Mac/Linux, or choose the 32-bit or 64-bit (depends on your system) Standalone Installer if you are using Windows
  
@@ -22,9 +22,9 @@
 ![image](https://user-images.githubusercontent.com/122490362/211928318-cc1d49af-e923-4512-a88e-753eb5ef876c.png)
 
 3. Click New Terminal
-4. In your new terminal type: ssh CS15LAccount@ieng.ucsd.edu (replace 'CS15LAccount' with your CS15L account name)
+4. In your new terminal type: `ssh CS15LAccount@ieng.ucsd.edu` (replace 'CS15LAccount' with your CS15L account name)
 6. It should then ask for your password, enter your password
-7. If you don't know your password, follow this guide: https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit
+7. If you don't know your password, follow this guide: [https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit)
 8. If you see a message like this, you'll know you've connected:
 
 ![image](https://user-images.githubusercontent.com/122490362/211930465-746a7a7e-4d07-4623-b848-0200ea8f25f0.png)
@@ -55,6 +55,8 @@ Notice how they are different, that's becuase the `-a` stands or "all", and show
 For the cp command, you should get something like this:
 
 ![image](https://user-images.githubusercontent.com/122490362/211931321-ec745c7a-949c-41c0-a5fd-7faad4c88e6a.png)
+
+The cp stands for copy, and it copies a file from the first location, into the second. Notice the "No such file or directory"? That's because there isn't a file called hello.txt in that folder. Use cd and ls to navigate to that directory to see for yourself.
 
 Feel free to try out any other commands on your own!
 
