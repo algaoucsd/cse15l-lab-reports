@@ -1,6 +1,6 @@
 # CSE 15L Lab 2/3 Report: 
 
-## Part1: 
+## Part 1: 
 Code used for the web server:
 ```
 import java.io.IOException;
@@ -51,7 +51,7 @@ The exact same process happens for the when we use the URL: [http://localhost:40
 The difference this time, is that instead of s being an empty string in the beginning, it's now "Hello\n". The 1st index in parameters gets set equal to "World", and then s gets added onto it "World\n" so s becomes "Hello\nWorld\n". THen, s is returned and we get the following output on the webpage:
 
 ![image](https://user-images.githubusercontent.com/122490362/215367172-ca46508f-fb20-4020-9a0b-65db8c75e74a.png)
-## Part1:
+## Part 2:
 Failure Inducing Input:
 ```
   @Test
