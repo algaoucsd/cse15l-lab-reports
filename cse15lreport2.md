@@ -51,4 +51,51 @@ The exact same process happens for the when we use the URL: [http://localhost:40
 The difference this time, is that instead of s being an empty string in the beginning, it's now "Hello\n". The 1st index in parameters gets set equal to "World", and then s gets added onto it "World\n" so s becomes "Hello\nWorld\n". THen, s is returned and we get the following output on the webpage:
 
 ![image](https://user-images.githubusercontent.com/122490362/215367172-ca46508f-fb20-4020-9a0b-65db8c75e74a.png)
+## Part1:
+Failure Inducing Input:
+```
+  @Test
+  public void testReverseInPlace2(){
+    int[] input1 = {1,2,3,};
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3,2,1 }, input1);
+  }
+```
 
+Working Input(Despite Bugs):
+```
+	@Test 
+	public void testReverseInPlace1() {
+    int[] input1 = { 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3 }, input1);
+	}
+```
+
+Symptom: 
+
+![image](https://user-images.githubusercontent.com/122490362/215601071-c1a92d16-b1cf-4423-800d-96859a65fb79.png)
+
+Before Code:
+```
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+After Code:
+```
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length / 2; i += 1) {
+      int x = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = x;
+    }
+  }
+```
+
+The problem with the code originally was that it was merely replacing the first half, and not actually swapping. The changes made make it so the elements in the array are actually swapped around.
+
+## Part 3:
+There were a couple of things I learned from the lab. For one, how to setup a webpage/webserver on my own computer using java. Also learning how to use JUnit was another thing I learned from the past couple labs.
