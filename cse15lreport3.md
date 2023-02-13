@@ -269,3 +269,6 @@ written_2/travel_guides/berlitz1/HandRIstanbul.txt
 ```
 
 This last flag `-size` will find us all the files of a certain size requirement. Putting a `+` before the number returns all the files with greater than that size, and a `-` returns all the files of less than that size, while no sign indicates that exact size. Then, there's `c` `k` `M` and `G` to indicate bytes, kilobytes, megabytes, and gigabytes respectively. It can be used for a few things, but the most common use is just to find specific files you know are large or specific files you know are small.
+
+## Resources:
+All commands were found using: [https://linuxhandbook.com/find-command-examples/](https://linuxhandbook.com/find-command-examples/)
