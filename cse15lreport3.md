@@ -164,6 +164,7 @@ written_2/travel_guides/berlitz1/HistoryMalaysia.txt
 written_2/travel_guides/berlitz1/HistoryMallorca.txt
 ```
 So using `-name "" -o -name ""` gives all results that fit the first name OR the second name. While it wasn't demonstrated here, one of the best examples would probably be with finding all your header files for C++, you can find .hpp and .h files.
+
 **Example 3:**
 `find <directory> -mtime (time)`
 
