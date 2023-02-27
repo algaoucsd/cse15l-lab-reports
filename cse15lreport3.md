@@ -6,7 +6,7 @@
 
 Input 1: 
 ```
-find written_2/ - type f
+find written_2/ -type f
 ```
 
 Output 1:
